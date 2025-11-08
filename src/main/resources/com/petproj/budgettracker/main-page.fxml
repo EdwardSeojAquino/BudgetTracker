@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.petproj.budgettracker.Controller.MainPageController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <Label fx:id="remainingTf" text="${controller.remaining}">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Text fx:id="savingsTf" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="editBudgetBtn" mnemonicParsing="false" text="Edit Budget Button">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="addSavingsBtn" mnemonicParsing="false" text="Add Remaining to Savings" />
+               </children>
+            </HBox>
+            <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Insert expenditures" />
+         </children></VBox>
+   </children>
+</VBox>

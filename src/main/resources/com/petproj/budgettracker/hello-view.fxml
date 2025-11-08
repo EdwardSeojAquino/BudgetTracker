@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.petproj.budgettracker.Controller.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <VBox fx:id="loginContainer" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+      <children>
+         <Text fx:id="resultTf" strokeType="OUTSIDE" strokeWidth="0.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Text>
+         <TextField fx:id="usernameTf" promptText="Username: ">
+            <VBox.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </VBox.margin>
+         </TextField>
+         <PasswordField fx:id="passTf" promptText="Password: ">
+            <VBox.margin>
+               <Insets left="20.0" right="20.0" />
+            </VBox.margin>
+         </PasswordField>
+         <HBox fx:id="loginBtnContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="submitLoginBtn" mnemonicParsing="false" onAction="#switchToMainPage" text="Submit"
+                       defaultButton="true">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin></Button>
+               <Button fx:id="clearLoginBtn" mnemonicParsing="false" text="Clear" onAction="#handleClearLoginBtnAction">
+                  <HBox.margin>
+                     <Insets left="10.0" />
+                  </HBox.margin></Button>
+            </children>
+            <padding>
+               <Insets top="20.0" />
+            </padding>
+         </HBox>
+      </children>
+      <VBox.margin>
+         <Insets left="200.0" right="200.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+      </padding>
+   </VBox>
+</VBox>
