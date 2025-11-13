@@ -24,7 +24,10 @@ public class MainPageController {
     }
 
     @FXML
-    private Label remainingTf;
+    public Label remainingTf;
+
+    @FXML
+    public Text savingsTF;
 
     @FXML
     public Button editBudgetBtn;
@@ -45,9 +48,6 @@ public class MainPageController {
 
 
     private int savings = 0;
-    @FXML
-    private Text savingsTf;
-    @FXML
     public void addToSavings(){
         savings  += getRemaining();
         setRemaining(budget);
